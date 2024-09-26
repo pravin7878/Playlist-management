@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  /* background-color: rgb(28, 28, 35); */
+  color: white;
+}
+
+#root>main{
+  background-color: rgb(28, 28, 35);
+}
+
+/* #root>main>section{
+  background-color: #27272F;
+  border-radius: 20px;
+} */
+
+#root>main>section>div{
+  background-color: #27272F;
+}
+/* #root>main>section+section>main{
+  background-color: #27272F;
+} */
+
+.dragging {
+  background-color: aqua;
+  border: solid 2px black;
+  opacity: 1;
+}
+
