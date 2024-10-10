@@ -90,7 +90,7 @@ export default function Sidebar() {
   return (
     <div className="flex flex-col flex-wrap gap-1 h-full rounded-2xl">
       {/* hare is logo saction */}
-      <div className="flex justify-center items-center border-b-2 border-black h-[10%]">
+      <div className="flex justify-center items-center border-b-2 border-black h-[10%] text-white">
         <h1>Blaash</h1>
       </div>
 
