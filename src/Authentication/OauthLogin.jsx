@@ -19,25 +19,7 @@ export const OauthLogin = () => {
 
     }
 
-    // const hendelLoginSuccess = useGoogleLogin({
-    //     onSuccess: async (tokenResponse) => {
-    //         console.log(tokenResponse);
-
-            
-    //         const response = await axios.post("http://localhost:5000/api/auth/google", {
-    //             access_token: tokenResponse.access_token,
-    //         });
-
-    //         console.log(response);
-            
-
-    //         const token = credentialResponse.access_token
-    //         const decodedToken = jwtDecode(token)
-    //         dispatch(getUser(decodedToken))
-    //         console.log(decodedToken);
-    //     }
-    // })
-
+    
 
     const hendelLoginSuccess = (credentialResponse) => {
         console.log(credentialResponse);
@@ -89,23 +71,13 @@ export const OauthLogin = () => {
             <span className="text-gray-800">or</span>
         </div>
 
-        {/* <button
-            className="flex items-center justify-center w-full bg-white border-2 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
-            onClick={hendelLoginSuccess}
-        >
-            <img
-                src="https://www.svgrepo.com/show/355037/google.svg"
-                alt="Google logo"
-                className="w-5 h-5 mr-2"
-            />
-            Login with Google
-        </button> */}
+        <div className='flex items-center justify-center'>
         <GoogleLogin
-            clientId='743660267745-lpq5raah88db2ldcdfhqicoemrdhubvd.apps.googleusercontent.com'
+            clientId='743660267745-mccrh5lij23qgr9bf0dsa0am389tpeln.apps.googleusercontent.com'
             onSuccess={hendelLoginSuccess}
             onError={handleLoginFailure}
         />
+        </div>
     </div>
 
     )
